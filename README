@@ -1,0 +1,17 @@
+This sctipt mirrors number of repositories hosted on GitHub on local machine.
+
+Example usage:
+
+- gh-mirror.py -D /var/repos openstack
+
+  Will mirror all repositories owned by openstack GitHub user to dirs
+  /var/repos/openstack/nova, /var/repos/openstack/glance, etc.
+  All subdirs of /var/repos/openstack that does not correspond to a repo on
+  GitHub will be deleted.
+
+- gh-mirror.py -D /var/repos YorikSar/gh-mirror
+
+  Will mirror one repo to dir /var/repos/YorikSar/gh-mirror
+
+Repositories that are not yet on local machine will be cloned as bare
+repositories. Exiting repositories will be just fetched.
