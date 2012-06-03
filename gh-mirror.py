@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """Mirrors number of GitHub repositories."""
 import argparse
 import logging
