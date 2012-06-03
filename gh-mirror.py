@@ -100,7 +100,7 @@ def sync_repo(user_dir, username, repo):
         if os.path.exists(repo_path):
             git('--git-dir', repo_path, 'fetch')
         else:
-            git('clone', '--bare', repo_url, repo_path)
+            git('clone', '--mirror', repo_url, repo_path)
     except GitError as ex:
         log.error('Sync failed: %s', ex)
         return False

@@ -13,5 +13,5 @@ Example usage:
 
   Will mirror one repo to dir /var/repos/YorikSar/gh-mirror
 
-Repositories that are not yet on local machine will be cloned as bare
+Repositories that are not yet on local machine will be cloned as mirror
 repositories. Exiting repositories will be just fetched.
